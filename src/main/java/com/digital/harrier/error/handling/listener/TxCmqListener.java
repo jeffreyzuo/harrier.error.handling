@@ -101,6 +101,8 @@ public class TxCmqListener implements Runnable,ReceiptDeleteCallBack {
                     continue;
                 }
 
+                deleteMsg(msg.getReceiptHandle());
+
                 getLogger().debug("Form:" + errorRise.getFrom() + ",error code:" + errorRise.getErrCode() + ",error msg:" + errorRise.getErrMsg() + ",message:" + errorRise.getMessage());
 
             }
