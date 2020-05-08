@@ -5,6 +5,8 @@ public class ErrorRise {
     private String errMsg;
     private String message;
     private String from;
+    private String componentName;
+    private String appid;
 
 
     public int getErrCode() {
@@ -37,5 +39,21 @@ public class ErrorRise {
 
     public void setFrom(String from) {
         this.from = from;
+    }
+
+    public String getComponentName() {
+        return componentName;
+    }
+
+    public void setComponentName(String componentName) {
+        this.componentName = componentName;
+    }
+
+    public String getAppid() {
+        return appid;
+    }
+
+    public void setAppid(String appid) {
+        this.appid = appid;
     }
 }
